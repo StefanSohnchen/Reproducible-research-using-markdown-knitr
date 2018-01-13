@@ -31,7 +31,7 @@ Fork/clone the GitHub repository created for this assignment. You will submit th
 NOTE: The GitHub repository also contains the dataset for the assignment so you do not have to download the data separately.
 
 ## Loading and preprocessing the data
-We assume that the reader set the correct R working directory with the ```setwd()``` function.  
+Set the correct R working directory with the ```setwd()``` function.  
 
 1. Load the data (i.e. ```read.csv()```)
 
@@ -72,7 +72,7 @@ activity <- data.frame(date=activity_raw$date,
 rm(activity_raw)   
 ```
         
-3. We display the first few rows of the ```activity``` data frame:
+3. Display the first few rows of the ```activity``` data frame:
 
 ```{r}
 head(activity)
@@ -91,7 +91,7 @@ sum_data <- aggregate(activity$steps, by=list(activity$date), FUN=sum, na.rm=TRU
 names(sum_data) <- c("date", "total")
 ```
 
-We display the first few rows of the ```sum_data``` data frame:
+Display the first few rows of the ```sum_data``` data frame:
 
 ```{r}
 head(sum_data)
@@ -136,7 +136,7 @@ mean_data <- aggregate(activity$steps,
 names(mean_data) <- c("interval", "mean")
 ```
 
-We display the first few rows of the ```mean_data``` data frame:
+Display the first few rows of the ```mean_data``` data frame:
 
 ```{r}
 head (mean_data)
@@ -212,7 +212,7 @@ activity[na_pos, "steps"] <- mean_vec
 rm(mean_vec, na_pos)
 ```
 
-We display the first few rows of the new ```activity``` data frame:
+Display the first few rows of the new ```activity``` data frame:
 
 ```{r}
 head(activity)
