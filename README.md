@@ -7,7 +7,7 @@ To see the complete file, i.e. with all the plots displayed, run the file in RSt
 Steps:
 
 1 Open the "Markdown_knitr_PeerAssessmentCourse1.Rmd" file on GitHub in edit mode.    
-2 Copy the marked up text. ```Copying the text as displayed in the browser will not reproduce the entire file).```
+2 Copy the marked up text. ```Copying the text as displayed in the browser will not reproduce the entire file.```   
 3 Go to RStudio and create a New R Markdown and save as an HTML file.   
 4 Select all the New R Markdown default text and delete.   
 5 Paste the text copied in step 2.   
