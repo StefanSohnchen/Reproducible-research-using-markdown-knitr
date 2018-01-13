@@ -4,8 +4,6 @@ author: "Stefan Sohnchen"
 date: "January 12, 2018"
 output:
   html_document: default
-  pdf_document: default
-  word_document: default
 ---
 
 ## Introduction
