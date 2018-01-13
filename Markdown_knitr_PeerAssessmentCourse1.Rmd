@@ -10,7 +10,7 @@ output:
 
 ## Introduction
 
-It is now possible to collect a large amount of data about personal movement using activity monitoring devices such as a Fitbit, Nike Fuelband, or Jawbone Up. These type of devices are part of the "quantified self" movement - a group of enthusiasts who take measurements about themselves regularly to improve their health, to find patterns in their behavior, or because they are tech geeks. But these data remain under-utilized both because the raw data are hard to obtain and there is a lack of statistical methods and software for processing and interpreting the data.
+It is now possible to collect a large amount of data about personal movement using activity monitoring devices such as a Fitbit, Nike Fuelband, or Jawbone Up. These type of devices are part of the “quantified self” movement – a group of enthusiasts who take measurements about themselves regularly to improve their health, to find patterns in their behavior, or because they are tech geeks. But these data remain under-utilized both because the raw data are hard to obtain and there is a lack of statistical methods and software for processing and interpreting the data.
 
 This assignment makes use of data from a personal activity monitoring device. This device collects data at 5 minute intervals through out the day. The data consists of two months of data from an anonymous individual collected during the months of October and November, 2012 and include the number of steps taken in 5 minute intervals each day.
 
@@ -185,7 +185,7 @@ The 5-minute interval that contains the maximum of steps, on average across all 
 
 Note that there are a number of days/intervals where there are missing values (coded as ````NA```). The presence of missing days may introduce bias into some calculations or summaries of the data.
 
-1. Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with ```NA```'s)
+1. Calculate and report the total number of missing values in the dataset (i.e. the total number of rows with ```NA```’s)
 
 ```{r}
 # Clear the workspace
@@ -195,7 +195,7 @@ rm(max_interval)
 NA_count <- sum(is.na(activity$steps))
 ```
 
-The number of ```NA```'s is **2304**.
+The number of ```NA```’s is **2304**.
 
 2. Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
 
@@ -261,7 +261,7 @@ These values differ from the estimates from the first part of the assignment. Th
 
 For this part the ```weekdays()``` function may be of some help here. Use the dataset with the filled-in missing values for this part.
 
-1. Create a new factor variable in the dataset with two levels - "weekdays" and "weekend" indicating whether a given date is a weekday or weekend day.
+1. Create a new factor variable in the dataset with two levels - “weekdays” and “weekend” indicating whether a given date is a weekday or weekend day.
 
 ```{r}
 # The new factor variable "daytype" was already in the activity data frame
@@ -308,4 +308,3 @@ xyplot(mean ~ interval | daytype, mean_data,
 # Clear the workspace
 rm(mean_data)
 ```
-
